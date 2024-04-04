@@ -1,5 +1,3 @@
-Here the consumer dag is scheduled not based on time but based on the data updates by producer.dag.
-
 # Data Processing DAGs
 
 This repository contains two Airflow DAGs for data processing tasks: "producer" and "consumer".
@@ -21,6 +19,7 @@ This task executes the `update_dataset` function, which appends "Producer Update
 ## Consumer DAG
 
 The "consumer" DAG is responsible for reading data from a dataset daily by printing the contents of a file located at "/tmp/my_file.txt".
+Here the consumer dag is scheduled not based on time but based on the data updates by producer.dag
 
 ### Overview
 
